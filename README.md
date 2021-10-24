@@ -9,7 +9,7 @@ __Most importantly, this library is interoperable with existing oak code, so you
 ## Example
 The ubiquitous _Hello World!_ program:
 ```ts
-import { use, listen } from "oak-hooks";
+import { use, listen } from "https://deno.land/x/oak_hooks/mod.ts";
 
 const App = () => {
   use((ctx) => {
@@ -35,7 +35,7 @@ Altough you shouldn't need to use them, we also provide the ``appify()`` and ``r
 An example:
 
 ```ts
-import { get, use, routes, listen } from "oak-hooks";
+import { get, use, routes, listen } from "https://deno.land/x/oak_hooks/mod.ts";
 
 const books = new Map<string, any>();
 books.set("1", {
