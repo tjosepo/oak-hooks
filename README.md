@@ -4,7 +4,7 @@ A wrapper of the [oak middleware framework](https://oakserver.github.io/oak/) wh
 
 This library removes the need to manually manage the ``Application`` and ``Router`` instances in your code, lets you group middlewares into custom hooks, and lets you instantiate components in different ways according to you needs.
 
-__Most importantly, this library is interoperable with existing oak code, so you can adopt it gradually.__
+__Most importantly, this library is interoperable with existing oak code, so you can use it with existing projects.__
 
 ## Example
 The ubiquitous _Hello World!_ program:
@@ -35,7 +35,7 @@ Altough you shouldn't need to use them, we also provide the ``appify()`` and ``r
 An example:
 
 ```ts
-import { get, use, routes, listen } from "https://deno.land/x/oak_hooks/mod.ts";
+import { get, use, routes, allowedMethods, listen } from "https://deno.land/x/oak_hooks/mod.ts";
 
 const books = new Map<string, any>();
 books.set("1", {
